@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MiniProject Part1</title>
+        <link rel="stylesheet" href="MiniProject-Style.css">
+    </head>
+    <body>
+    <div>
+        <h1>MiniProject Part 1</h1>
+        <!--1. Add your HTML elements. Specially, your prototype page should have, -->
+        <h2>Playing with Filters</h2>
+        <h3>Add Filter To Your Photos!</h3>
+        <table>
+            <tr>
+                <td>Uploaded Image</td>
+                <td>Filtered Image</td>
+            </tr>
+            <tr>
+                <td><canvas id="canvas1"></canvas></td>
+                <td><canvas id="canvas2"></canvas></td>
+            </tr>
+        </table>
+        
+        <h4>Upload an Image</h4>
+        <input type="file" accept="image/*" multiple="false" id="upImage" onchange="uploadImage()">
+    </div>
+    <div>
+        <h4>Choose Filter</h4>
+        <input type="button" value="Greyscale" onclick="makeGrey()">
+        <input type="button" value="Red" onclick="makeRed()">
+        <input type="button" value="Blue" onclick="makeBlue()">
+        <input type="button" value="Rainbow" onclick="makeRainbow()">
+        <input type="button" value="Window Pane" onclick="makeWindow()">
+        <input type="button" value="Blury" onclick="makeBlury()">
+    </div>
+    <div class="reset">
+        <input type="button" value="Reset" onclick="resetImage()">
+    </div>
+        <script src="MiniProject.js"></script>
+        <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+    </body>
+</html>
